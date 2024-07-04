@@ -2,7 +2,7 @@
 <configuration>
  <property>
         <name>tez.lib.uris</name>
-        <value>file:///opt/tez/share/tez.tar.gz</value>
+        <value>file:///molils/tez/share/tez.tar.gz</value>
         </property>
     <property>
         <name>tez.use.cluster.hadoop-libs</name>
