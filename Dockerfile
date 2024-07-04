@@ -112,7 +112,7 @@ RUN sudo chown -R ubuntu:ubuntu /mollis/hadoop3/logs
 RUN sudo chown -R ubuntu:ubuntu /mollis/hive/conf
 RUN sudo chown -R ubuntu:ubuntu /mollis/spark/conf
 RUN sudo chown -R ubuntu:ubuntu /mollis/tez/conf
-RUN sudo "firefox > /dev/null 2>&1 &" > /mollis/firefox.sh
+RUN sudo echo "firefox > /dev/null 2>&1 &" > /mollis/firefox.sh
 RUN sudo chmod +x /mollis/firefox.sh
 
 
