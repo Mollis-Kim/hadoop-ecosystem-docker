@@ -1,6 +1,10 @@
  hadoop-ecosystem docker
 
 # Hadoop Hive Spark DockerFile
+---
+### 구성 컴포넌트
+- Hadoop, Hive, Tez, Spark, Zeppelin
+
 1. 도커파일 빌드 및 브릿지 네트워크 생성
 ```sh
 docker build -t himuchik/hadoop-hive-spark-base:latest .
