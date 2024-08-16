@@ -1,5 +1,5 @@
-export SPARK_HOME=/molils/spark
-export HADOOP_HOME=/molils/hadoop3
+export SPARK_HOME=/mollis/spark
+export HADOOP_HOME=/mollis/hadoop3
 export PATH=$PATH:$JAVA_HOME/bin:$SPARK_HOME/bin:$HADOOP_HOME/bin:$HADOOP_HOME/sbin
 export HADOOP_CONF_DIR=$HADOOP_HOME/etc/hadoop
 export YARN_CONF_DIR=$HADOOP_HOME/etc/hadoop

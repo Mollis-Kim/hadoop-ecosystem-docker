@@ -28,5 +28,7 @@ docker run -itd -h worker3 --privileged --network mynet --name worker3 himuchik/
 
 ```sh
 docker run -d -h mysql --name mysql -e TZ=UTC -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root --network mynet mysql:5.7
-docker exec -it mysql mysql -u root -proot -e "CREATE DATABASE hive; CREATE USER 'hive'@'%' identified by 'hive'; GRANT ALL PRIVILEGES ON hive.* to 'hive'@'%'; FLUSH PRIVILEGES;"
+docker exec -it mysql mysql -u root -proot -e "CREATE DATABASE hive_warehouse; CREATE USER 'hive'@'%' identified by 'hive'; GRANT ALL PRIVILEGES ON hive_warehouse.* to 'hive'@'%'; FLUSH PRIVILEGES;"
+
+$ schematool -initSchema -dbType mysql
 ```
